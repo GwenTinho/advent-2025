@@ -28,7 +28,7 @@ let is_dupe s =
 
 let is_exp n =
   let l = log10_int n + 1 in
-  let rec aux i m d=
+  let rec aux i m d =
     if i  > l / 2 then None
     else
     if l mod i = 0 then
